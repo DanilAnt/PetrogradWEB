@@ -1,0 +1,42 @@
+.h1{
+    font-family: 'Soviet';
+    font-size: 10rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15rem;
+    color: $black;
+}
+.h2{
+    font-family: 'Soviet';
+    font-size: 6rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15rem;
+    color: $black;
+}
+.fonTextStyle{
+    font-family: 'TT';
+    font-size: 12rem;
+    line-height: 10rem;
+    font-style: italic;
+    font-weight: bold;
+    color: $black;
+}
+.bodyTextStyle{
+    font-family: 'TT';
+    font-size: 2rem;
+    line-height: 2.3rem;
+    font-style: normal;
+    font-weight: normal;
+    color: $black;
+    &--big{
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-style: italic;
+        color: $red;
+    }
+    &--small{
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+}

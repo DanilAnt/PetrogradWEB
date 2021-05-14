@@ -1,0 +1,16 @@
+.header{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    z-index: 100;
+    .header__container{
+        height: $heightHeader;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__logo{
+        width: 19.5rem;
+        height: 4.6rem;
+    }
+}

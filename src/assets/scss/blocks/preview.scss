@@ -1,0 +1,35 @@
+.preview{
+    height: 80rem;
+    position: relative;
+    padding-top: $heightHeader;
+    .preview__content{
+        height: 80rem - $heightHeader;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .preview__description{
+            margin-bottom: 0.5rem;
+        }
+        .preview__name{
+            margin-bottom: 4rem;
+        }
+    }
+    .preview__picture{
+        position: absolute;
+        z-index: 20;
+        right: 0;
+        top: $heightHeader;
+        background-color: transparent;
+    }
+    .preview__bgground{
+        position: absolute;
+        z-index: 1;
+        right: 0rem;
+        top: 0;
+        border-bottom: 80rem solid $red;
+        border-left: 10rem solid transparent;
+        height: 0;
+        width: 32%;    
+    }
+}
