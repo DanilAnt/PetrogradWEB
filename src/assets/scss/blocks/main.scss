@@ -9,6 +9,9 @@
     text-transform: uppercase;
     position: relative;
     display: flex;
+    .scrolledElement{
+        padding: 0 1rem;
+    }
     
     justify-content: center;
     // margin: 0 auto;
