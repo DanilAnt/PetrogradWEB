@@ -18,12 +18,92 @@ title: Petrograd Bike
                     <p>заказать</p>
                 </div>
             </button>
+            <img class="preview__picture" src="assets/images/bike_foto.png" alt="">
+
         </div>
-        <img class="preview__picture" src="assets/images/bike_foto.png" alt="">
 
 
     </div>
 
-    <div class="preview__bgground"></div>
+    <div class="preview__bgground">Трапеция</div>
+    <div class="preview__bgground_mobile">Трапеция</div>
 </div>
 <!-- preview -->
+
+<!-- main-->
+    <div class="main mainBlock" >
+        <div class="main__upLine main__line" data-scrolledLine="scrolledLine" >
+            <p class="scrolledElement">видео</p>
+        </div>
+        <div class="main__upLine main__line" data-scrolledLine="scrolledLine" >
+            <p class="scrolledElement">видео</p>
+        </div>
+        <div class="main__content hided">
+            <video width="430" height="580" autoplay="autoplay" muted loop>
+                <source src="assets/images/Video.mp4">
+            </video>
+            <a class="main__button" href="#" >
+                <svg class="playButton">
+                    <use xlink:href="#playButton"></use>
+                </svg> 
+            </a>
+        </div>
+        
+    </div>
+    <div class="main mainBlock" >
+        <div class="main__upLine main__line" data-scrolledLine="scrolledLine" >
+            <p class="scrolledElement">велосипед</p>
+        </div>
+        <div class="main__upLine main__line" data-scrolledLine="scrolledLine" >
+            <p class="scrolledElement">велосипед</p>
+        </div>
+        <div class="main__content hided">
+            <img src="assets/images/product_foto.jpg" alt="">
+            <a class="main__button" href="#" >
+                <svg class="linkButton">
+                    <use xlink:href="#linkButton"></use>
+                </svg> 
+            </a>
+        </div>
+        
+    </div>
+<!-- /main -->
+<!-- contact -->
+<div class="contact">
+    <div class="container">
+        <div class="contact__content">
+            <h2 class="contact__header h2">
+                оставить заявку
+            </h2>
+            <form class="contact__form form" action="">
+                <div class="form__field">
+                    <input class="form__input bodyTextStyle" type="text" name="name" class="form-control" placeholder="Имя">
+                </div>
+                <div class="form__field">
+                    <input class="form__input bodyTextStyle" type="text" name="phone" data-tel-input class="form-control" placeholder="+7 ( ___ ) - __ - __">
+                </div>
+                <div class="form__submit">
+                    <button class="button form__button" type="submit">
+                        <div class="button__content form__button ">
+                            <p>отправить</p>
+                        </div>
+                    </button>
+                    <div class="form__checkbox">
+                        <input class="checkbox__input" type="checkbox" id="horns" name="checkbox">
+                        <label class="checkbox__lable bodyTextStyle--small" for="horns">Нажимая на кнопку «Отправить» вы соглашаетесь с нашей политикой конфиденциальности</label>
+                    </div>
+                </div>
+                <div class="form__okayMessege"> 
+                    <svg>
+                        <use xlink:href="#okayPic"></use>
+                    </svg> 
+                    <div>
+                        Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайшее время
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+<!-- /contact -->

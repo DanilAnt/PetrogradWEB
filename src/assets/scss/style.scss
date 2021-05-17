@@ -6,7 +6,8 @@
 html {
     font-size: 62.5%;
     font-family: 'TT';
-    
+    overflow-x: hidden;
+   
 }
 body {
     background-color: $bgcolor;
@@ -14,11 +15,20 @@ body {
     font-style: normal;
     font-weight: normal;
     color: $black;
+    overflow-x: hidden;
+    margin: 0 auto;
+    
+
 }
 @import "blocks/text_decorations.scss";
 @import "blocks/container.scss";
 @import "blocks/header.scss";
+@import "blocks/burger.scss";
 @import "blocks/nav.scss";
 @import "blocks/preview.scss";
 @import "blocks/button.scss";
+@import "blocks/main.scss";
+@import "blocks/contact.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";
 

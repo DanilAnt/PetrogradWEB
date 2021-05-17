@@ -41,3 +41,37 @@
         
     }
 }
+.playButton{
+    
+    fill: $black;
+    transition: fill 0.2s linear;
+    &:hover{
+        fill: $red;
+    }
+    &:active{
+        fill: #B90303;
+    }
+}
+.playButton__circle{
+    fill: $white;
+}
+
+.linkButton{
+    fill: $black;
+    transition: fill 0.2s linear, stroke 0.2s linear;
+    stroke: $black;
+    stroke-width: 0;
+    &:hover{
+        fill: $red;
+        stroke: $red;
+    }
+    &:active{
+        fill: #B90303;
+        stroke: $red;
+    }
+}
+.linkButton__circle{
+    fill: $white;
+}
+
+

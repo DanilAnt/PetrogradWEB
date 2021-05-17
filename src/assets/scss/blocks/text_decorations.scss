@@ -5,6 +5,10 @@
     font-style: normal;
     line-height: 15rem;
     color: $black;
+    @include bp($md){
+        line-height: 6rem; 
+        font-size: 4rem;
+    }
 }
 .h2{
     font-family: 'Soviet';
@@ -13,6 +17,10 @@
     font-style: normal;
     line-height: 15rem;
     color: $black;
+    @include bp($md){
+        font-size: 4rem;
+        line-height: 1.5;
+    }
 }
 .fonTextStyle{
     font-family: 'TT';
@@ -29,14 +37,26 @@
     font-style: normal;
     font-weight: normal;
     color: $black;
+    @include bp($md){
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
     &--big{
         font-size: 3rem;
         line-height: 3.5rem;
         font-style: italic;
         color: $red;
+        @include bp($md){
+            font-size: 2rem;
+            line-height: 2.3rem;
+        }
     }
     &--small{
         font-size: 1.4rem;
         line-height: 1.6rem;
+        @include bp($md){
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+        }
     }
 }

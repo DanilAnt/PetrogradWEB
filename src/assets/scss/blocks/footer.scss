@@ -1,0 +1,33 @@
+.footer{
+    background-color: #192632;
+    color: $white;
+    line-height: 0;
+    @include bp($md){
+        line-height: 1.5;
+        font-size: 1.6rem;
+    }
+    .footer__content{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0;
+        @include bp($md){
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 1rem 0;
+        }
+        .footer__company{
+            color: #6C7069;
+            a{
+                color: $white;
+                text-decoration: underline;
+                transition: color 0.2s linear;
+                &:hover{
+                    color: $red;
+
+                }
+            }
+        }
+    }
+    
+}

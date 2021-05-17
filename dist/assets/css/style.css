@@ -362,6 +362,17 @@ textarea {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+}
+
 @font-face {
     font-family: 'Soviet';
   src: url("../fonts/SovietFont.ttf");
@@ -371,9 +382,23 @@ textarea {
 
 @font-face {
     font-family: 'TT';
-  src: url("../fonts/TT_Commons-Trial-Black.otf");
+  src: url("../fonts/TT Commons-Trial/TT Commons-Trial-Regular.otf");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT';
+  src: url("../fonts/TT Commons-Trial/TT Commons-Trial-Bold Italic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT';
+  src: url("../fonts/TT Commons-Trial/TT Commons-Trial-Italic.otf");
+  font-weight: normal;
+  font-style: italic;
 }
 
 html {
@@ -382,7 +407,251 @@ html {
 }
 
 body {
-    background-color: #BDB199;
-    font-size: 10rem;
+    background-color: #F1E7D4;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: normal;
     color: #192632;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-family: 'Soviet';
+    font-size: 10rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15rem;
+    color: #192632;
+}
+
+.h2 {
+    font-family: 'Soviet';
+    font-size: 6rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 15rem;
+    color: #192632;
+}
+
+.fonTextStyle {
+    font-family: 'TT';
+    font-size: 12rem;
+    line-height: 10rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #192632;
+}
+
+.bodyTextStyle {
+    font-family: 'TT';
+    font-size: 2rem;
+    line-height: 2.3rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #192632;
+}
+
+.bodyTextStyle--big {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-style: italic;
+    color: #FC0000;
+}
+
+.bodyTextStyle--small {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.container {
+    max-width: 136.6rem;
+    margin: 0 auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.header {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    z-index: 100;
+}
+
+.header .header__container {
+    height: 8.6rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .header__logo {
+    width: 19.5rem;
+    height: 4.6rem;
+}
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    margin-right: -1.5rem;
+}
+
+.nav .nav__item .nav__link {
+    padding: 0 1.5rem;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    transition: all 0.1s linear;
+}
+
+.nav .nav__item .nav__link:hover {
+    color: #F1F1F1;
+}
+
+.preview {
+    height: 80rem;
+    position: relative;
+    padding-top: 8.6rem;
+}
+
+.preview .preview__content {
+    height: 71.4rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.preview .preview__content .preview__description {
+    margin-bottom: 0.5rem;
+}
+
+.preview .preview__content .preview__name {
+    margin-bottom: 5rem;
+}
+
+.preview .preview__picture {
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+}
+
+.preview .preview__bgground {
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0rem;
+    top: 0;
+    border-bottom: 80rem solid #FC0000;
+    border-left: 10rem solid transparent;
+    height: 0;
+    width: 32%;
+}
+
+.button {
+    color: #F1F1F1;
+    text-transform: uppercase;
+    position: relative;
+    width: 20rem;
+    height: 5rem;
+    margin-left: 0.5rem;
+}
+
+.button--inclined {
+    -webkit-transform: skew(160deg);
+    transform: skew(160deg);
+    margin-left: 2rem;
+}
+
+.button--inclined p {
+    -webkit-transform: skew(-160deg);
+    transform: skew(-160deg);
+}
+
+.button:hover .button__content {
+    -webkit-transform: translate(-0.5rem, -0.5rem);
+    transform: translate(-0.5rem, -0.5rem);
+}
+
+.button .button__content {
+    width: 100%;
+    height: 100%;
+    background-color: #FC0000;
+    border-radius: 0.4rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    transition: all 0.1s linear;
+}
+
+.button:after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-radius: 0.4rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #B90303;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    height: 200rem;
+    background-color: #FC0000;
+    color: #F1F1F1;
+    font-size: 12rem;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .main__content {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 50%;
+}
+
+.main .main__line {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 15rem;
+}
+
+.main .main__line p {
+    position: absolute;
+    top: 0;
+    margin: 1.5rem;
+}
+
+.main .main__line p:nth-child(odd) {
+    color: transparent;
+    -webkit-text-stroke: 0.3rem #F1F1F1;
 }

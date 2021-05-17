@@ -3,14 +3,44 @@
     background-color: transparent;
     width: 100%;
     z-index: 100;
+    overflow-x: hidden;
+    .showSidebar &{
+        position: fixed;
+    }
     .header__container{
         height: $heightHeader;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include bp($md){
+           height: 4rem;
+    
+        }
+        
     }
     .header__logo{
+        
         width: 19.5rem;
         height: 4.6rem;
+        
+    }
+    .header__link{
+        @include bp($md){
+            
+            transform: scale(0.6) translate3d(-20%, 20%, 0 );
+            
+            
+        }
+    }
+    
+}
+#logo_lion{
+    .redFon &{
+        fill: $white;
+    }
+}
+#logo_bike{
+    .redFon &{
+        fill: $white;
     }
 }
